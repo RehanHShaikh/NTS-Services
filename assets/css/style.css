@@ -150,16 +150,31 @@ main{
     
     .sidebar{
         width: 0;
+        display: none;
+    }
+    .search-bar{
+        width: 100%;
+        margin: 0;
+    }
+    .content{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .content{
         margin-left: 0;
         width: 100%;
     }
+
+    main{
+        padding: 20px;
+    }
+
     #show-menu:checked ~ *{
         .sidebar{
             width: 100%;
             z-index: 999;
+            display: block;
         }
 
         & .content{
